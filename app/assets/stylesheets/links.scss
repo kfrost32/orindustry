@@ -1,0 +1,135 @@
+// Place all the styles related to the links controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  font-family: -apple-system,BlinkMacSystemFont,San Francisco,Helvetica Neue,Helvetica,Ubuntu,Roboto,Noto,Segoe UI,Arial,sans-serif;
+  margin: 0px;
+}
+
+.nav{
+  width: 100%;
+  background: #232323;
+  padding: 15px 0;
+  h1{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+  }
+  span{
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    a{
+    color: #232323;
+  }
+  }
+}
+
+.link {
+  border-bottom: 1px solid #efefef;
+  .link-pad{
+    width: 100%;
+    padding: 40px;
+  }
+  h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+  }
+  p {
+    font-size: 18px;
+    margin: 0px;
+    color: #999999;
+  }
+  a {
+    text-decoration: none;
+
+    color: #232323;
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+}
+.new-link{
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.simple_form {
+  div.input {
+    margin-bottom: 10px;
+    clear: both;
+    /* Required for Webkit, but not for Gecko */
+  }
+  label {
+    display: block;
+    margin: 2px 0px;
+  }
+}
+
+div.boolean, .simple_form input[type='submit'] {
+  margin-left: 120px;
+}
+
+div.boolean label {
+  float: none;
+  margin: 0;
+}
+
+label.collection_radio_buttons {
+  float: none;
+  margin: 0;
+  margin-right: 10px;
+  vertical-align: -2px;
+  margin-left: 2px;
+}
+
+.field_with_errors {
+  background-color: #ff3333;
+}
+
+.simple_form {
+  .error {
+    clear: left;
+    color: black;
+    display: block;
+    margin-left: 120px;
+  }
+  .hint {
+    clear: left;
+    margin-left: 120px;
+    color: #555;
+    display: block;
+    font-style: italic;
+  }
+}
+
+input {
+  padding: 20px;
+  font-size: 24px;
+  width: 500px;
+  margin-left: 0px;
+  &.radio {
+    margin-right: 5px;
+    vertical-align: -3px;
+  }
+  &.check_boxes {
+    margin-left: 3px;
+    vertical-align: -3px;
+  }
+  input[type='submit'] {
+      margin-left: 0px;
+
+  }
+}
+div.boolean, .simple_form input[type='submit']{
+  margin-left: 0px;
+  width: 100%;
+  background: green;
+  color: white;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+}
+

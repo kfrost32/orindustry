@@ -1,0 +1,15 @@
+<div class="nav">
+<span><%= link_to "Add a job", new_link_path %></span>
+<h1>Outdoor Recreation Industry Links and Stuff</h1>
+
+</div>
+<% @links.each do |link| %>
+  <div class="link">
+    <div class="link-pad">
+    <h2><%= link_to link.title, link.url %></h2>
+    <p><%= link.site %></p>
+    </div>
+  </div>
+<% end %>
+<p><%= paginate @links %></p>
+

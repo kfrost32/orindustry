@@ -1,0 +1,8 @@
+<div class="new-link">
+<%= simple_form_for @link do |form| %>
+  <%= form.input :title, label: "Link title" %>
+  <%= form.input :site, label: "The Site" %>
+  <%= form.input :url, label: "Story Link" %>
+  <%= form.button :submit %>
+<% end %>
+</div>
