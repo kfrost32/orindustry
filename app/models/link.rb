@@ -3,4 +3,5 @@ class Link < ActiveRecord::Base
   validates :site, presence: true
   validates :url, presence: true
   validates :description, presence: true
+  validates :created_at, presence: true
 end

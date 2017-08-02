@@ -1,18 +1,14 @@
-<div class="nav">
-  <div class="nav-pad">
-<h1>Outdoor Recreation Industry Links and Stuff</h1>
-</div>
-</div>
-<% @links.each do |link| %>
+<% @links.each_with_index do |link, idx| %>
+  <%if(idx == 3) %>
+  <% end %>
   <div class="link">
     <div class="link-pad">
-    <h2><%= link_to link.title, link.url, target: '_blank' %></h2>
-    <p><%= link.site %></p>
-    <% if link.description.present? %>
-    <p class="description">"<%= link.description %>"</p>
-    <% end %>
+      <h2><%= link_to link.title, link.url, target: '_blank' %></h2>
+      <p><%= link.site %></p>
+      <% if link.description.present? %>
+      <p class="description">"<%= link.description %>"</p>
+      <% end %>
     </div>
   </div>
-<% end %>
+  <% end %>
 <p><%= paginate @links %></p>
-

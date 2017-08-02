@@ -5,9 +5,21 @@
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
   </head>
   <body>
     <div class="site-wrapper">
+      <div class="nav">
+        <div class="nav-pad">
+          <h1><a href="/">Outdoor Recreation Industry Links and Stuff</a></h1>
+          <div class="nav-links">
+          <ul>
+            <li><%= link_to "About", '/about' %></li>
+            <li>Contact</li>
+            </ul>
+            </div>
+        </div>
+      </div>
       <%= yield %>
     </div>
   </body>

@@ -2,7 +2,7 @@ class LinksController < ApplicationController
   autocomplete :link, :site
   def index
     @links = Link.page(params[:page]).per(20).order('created_at DESC')
-
+    @links_by_date = Link.all.group_by { |link| link.created_at.strftime("%A %D") }
   end
 
   def new
