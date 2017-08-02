@@ -138,6 +138,8 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
+    rails4-autocomplete (1.1.1)
+      rails (>= 3.0)
     rails_admin (1.2.0)
       builder (~> 3.1)
       coffee-rails (~> 4.0)
@@ -224,11 +226,13 @@ DEPENDENCIES
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
+  jquery-ui-rails
   kaminari
   listen (>= 3.0.5, < 3.2)
   pg
   puma (~> 3.7)
   rails (~> 5.1.2)
+  rails4-autocomplete
   rails_admin
   sass-rails (~> 5.0)
   selenium-webdriver

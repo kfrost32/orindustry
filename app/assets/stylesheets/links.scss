@@ -4,24 +4,24 @@
 body {
   font-family: -apple-system,BlinkMacSystemFont,San Francisco,Helvetica Neue,Helvetica,Ubuntu,Roboto,Noto,Segoe UI,Arial,sans-serif;
   margin: 0px;
+  background: #efefef;
 }
-
+.site-wrapper{
+  width: 800px;
+  margin: 0 auto;
+  background: #fff;
+}
 .nav{
   width: 100%;
   background: #232323;
-  padding: 15px 0;
   h1{
     color: white;
     font-size: 18px;
-    text-align: center;
+    text-align: left;
+
   }
-  span{
-    float: left;
-    padding: 0px;
-    margin: 0px;
-    a{
-    color: #232323;
-  }
+  .nav-pad{
+    padding: 20px;
   }
 }
 
@@ -34,12 +34,18 @@ body {
   h2 {
     font-size: 48px;
     font-weight: bold;
-    margin: 0 0 10px 0;
+    margin: 0;
   }
   p {
-    font-size: 18px;
+    font-size: 14px;
     margin: 0px;
     color: #999999;
+  }
+  .description{
+    font-size: 18px;
+    margin: 0px;
+    padding-top: 15px;
+    color: #444;
   }
   a {
     text-decoration: none;
